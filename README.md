@@ -23,8 +23,7 @@ The data used for this project are represented by the research collected from th
 4. The README that explains the analysis files is clear and understandable
 5. The work submitted for this project is the work of the student who submitted it
 
-## Summary of this project
-This repo includes the following files:
+## This repo includes the following files:
 
 1. This README explains how all of the scripts work and how they are connected.
 2. run_analysis.R includes the R code to execute the creation of the tidy data set. Prior to executing the run_analysis.R code, the data from the research website are assumed to be downloaded and the associated zip-file to be extracted in the R working folder.
