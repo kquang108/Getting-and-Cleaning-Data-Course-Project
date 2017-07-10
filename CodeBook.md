@@ -37,14 +37,12 @@ names(measurements) <- sub("^f","freq",names(measurements)) lookups the letter "
 names(measurements) <- sub("\\()","",names(measurements)) removes "()" from any character variable
 
 6. INDEPENDENT TABLE WITH AVERAGE OF EACH VARIABLE FOR EACH ACTIVITY AND EACH SUBJECT
-tidy.data <- data.frame(subjects,activity.labels,measurements) - combines the column vectors subjects and activity as well as the measurement data set
+tidy.data <- data.frame(subjects,activity.labels,measurements) - combines the column vectors subjects and activity as well as the measurement data set.
 
 "tidy <- tidy.data %>%
 arrange(Subjects, Activity.Desc) %>%
 group_by(Subjects, Activity.Desc) %>%
-summarise_all(funs(mean))" 
-
-- use the chain function from the package 'dplyr' to modify the tidy.data set and saves the results in the variable 'tidy'. First arrange and group by the data sets by subjects and activity description, then use summarise_all to calculate the mean between observations. The group_by command defines the grouping of how the mean is calculated.
+summarise_all(funs(mean))" - use the chain function from the package 'dplyr' to modify the tidy.data set and saves the results in the variable 'tidy'. First arrange and group by the data sets by subjects and activity description, then use summarise_all to calculate the mean between observations. The group_by command defines the grouping of how the mean is calculated.
 
 ## Output file
 is saved in tidy and can be saved with write.table() and row.name=FALSE to create the text file 'output.txt'. The first two columns of the output are the "Subject" (numbered from 1 to 30) and the name of the activity. The remaining columns represent the activities. The numeric values are the average of each observations, with the mean separated by subject and activity.
