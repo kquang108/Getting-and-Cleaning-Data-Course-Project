@@ -9,7 +9,7 @@ Merges the training and the test sets to create one data set Extracts only the m
 
 ## Steps in run_analysis.R to achieve the objective:
 
-. Prior to executing the run_analysis.R code, the data from the research website are assumed to be downloaded and the associated zip-file to be extracted in the R working folder.
+Prior to executing the run_analysis.R code, the data from the research website are assumed to be downloaded and the associated zip-file to be extracted in the R working folder.
 
 1. READ IN DATA - use the read.table R command to read and save the data sets to 
 test.data & train.data: actual data sets from the 9 volunteer 'test' group and 21 volunteer 'train' group
